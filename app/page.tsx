@@ -35,7 +35,7 @@ export default function Home() {
         background: `linear-gradient(135deg, ${PRIMARY_DARK} 0%, ${PRIMARY} 100%)`,
         color: 'white', padding: '40px 20px', textAlign: 'center',
       }}>
-        <div style={{ fontSize: '12px', color: '#b8d4f0', marginBottom: '8px', letterSpacing: '2px' }}>ACADEMY TRADING</div>
+        <div style={{ fontSize: '12px', color: '#b8d4f0', marginBottom: '8px', letterSpacing: '2px' }}>ONE ACADEMY </div>
         <h1 style={{ fontSize: '26px', fontWeight: '900', lineHeight: '1.3', margin: '0 0 12px' }}>
           좋은 학원,<br />제대로 찾아드립니다
         </h1>
