@@ -8,7 +8,7 @@ export default function Home() {
   ];
 
   const PRIMARY = '#1a237e';
-  const PRIMARY_DARK = '#154a8a';
+  const PRIMARY_DARK = '#1a237e';
   const ACCENT = '#e8502a';
   const BG = '#f4f7fb';
 
@@ -39,7 +39,7 @@ export default function Home() {
         <h1 style={{ fontSize: '26px', fontWeight: '900', lineHeight: '1.3', margin: '0 0 12px' }}>
           좋은 학원,<br />제대로 찾아드립니다
         </h1>
-        <p style={{ fontSize: '14px', color: '#d0e4f7', marginBottom: '24px' }}>반값 수수료 · 전국 매물 · 전문 상담</p>
+        <p style={{ fontSize: '14px', color: '#d0e4f7', marginBottom: '24px' }}>매도수수료 무료 · 전국 매물 · 전문 상담</p>
         <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
           <Link href={`/detail?url=${encodeURIComponent('https://oneacademy.co.kr/bbs/board.php?bo_table=table35')}`} style={{
             background: 'white', color: PRIMARY, padding: '12px 24px',
