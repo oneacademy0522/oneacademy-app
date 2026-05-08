@@ -140,6 +140,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 권리금 계산기 배너 */}
+      <section style={{ padding: '0 20px 20px' }}>
+        <a href="https://oneacademy0522.github.io/oneacademy/" target="_blank" rel="noopener noreferrer" style={{
+          display: 'block', textDecoration: 'none',
+          background: 'linear-gradient(135deg, #e8502a 0%, #ff7043 100%)',
+          borderRadius: '16px', padding: '24px 20px',
+          boxShadow: '0 4px 16px rgba(232,80,42,0.3)',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <div>
+              <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.8)', marginBottom: '4px', letterSpacing: '1px' }}>APP ONLY</div>
+              <div style={{ fontSize: '20px', fontWeight: '900', color: 'white', marginBottom: '6px' }}>🏫 권리금 계산기</div>
+              <div style={{ fontSize: '13px', color: 'rgba(255,255,255,0.9)', lineHeight: '1.5' }}>
+                우리 학원 권리금 시세는?<br />
+                원생수 · 시설 · 차량 기반 예측
+              </div>
+            </div>
+            <div style={{ fontSize: '40px' }}>→</div>
+          </div>
+        </a>
+      </section>
+
       {/* 지역별 담당자 */}
       <section style={{ padding: '0 20px 20px' }}>
         <h2 style={{ fontSize: '16px', fontWeight: '800', color: '#1a2e4a', marginBottom: '14px' }}>📍 지역별 담당자</h2>
@@ -175,11 +197,11 @@ export default function Home() {
         background: 'white', borderTop: '1px solid #dde8f5',
         padding: '12px 20px', display: 'flex', gap: '10px',
       }}>
-        <a href="tel:02-575-7792" style={{
+        <a href="tel:010-8966-7792" style={{
           flex: 1, background: PRIMARY_DARK, color: 'white', padding: '14px',
           borderRadius: '10px', textAlign: 'center', textDecoration: 'none',
           fontWeight: '700', fontSize: '15px',
-        }}>📞전화상담 010-8966-7792 </a>
+        }}>📞 전화상담 010-8966-7792</a>
         <a href="https://open.kakao.com/o/s6fASXti" target="_blank" rel="noopener noreferrer" style={{
           flex: 1, background: '#FEE500', color: '#3A1D1D', padding: '14px',
           borderRadius: '10px', textAlign: 'center', textDecoration: 'none',
