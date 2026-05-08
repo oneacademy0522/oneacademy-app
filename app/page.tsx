@@ -242,7 +242,10 @@ export default function Home() {
           <div>주소: 서울특별시 서초구 마방로 2길 82 3층</div>
           <div>Tel: 02-575-7792 | Phone: 010-8966-0779</div>
         </div>
-        <div style={{ marginTop: '10px', color: '#7aaad4' }}>ⓒ 원아카데미 All rights reserved.</div>
+        <div style={{ marginTop: '10px' }}>
+          <a href="/privacy" style={{ color: '#7aaad4', textDecoration: 'underline', fontSize: '11px' }}>개인정보처리방침</a>
+        </div>
+        <div style={{ marginTop: '6px', color: '#7aaad4' }}>ⓒ 원아카데미 All rights reserved.</div>
       </footer>
     </main>
   );
