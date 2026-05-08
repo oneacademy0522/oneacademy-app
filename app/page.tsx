@@ -139,9 +139,23 @@ export default function Home() {
           ))}
         </div>
       </section>
+{/* 이벤트 배너 */}
+      <section style={{ padding: '0 20px 20px' }}>
+        <a href="https://blog.naver.com/swnm123/224278959581" target="_blank" rel="noopener noreferrer" style={{
+          display: 'block', textDecoration: 'none',
+          background: 'linear-gradient(135deg, #ff6f00 0%, #ffa000 100%)',
+          borderRadius: '16px', padding: '22px 20px',
+          boxShadow: '0 4px 16px rgba(255,111,0,0.3)',
+        }}>
+          <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.85)', marginBottom: '6px', letterSpacing: '1px' }}>이번 달 한정 특별혜택</div>
+          <div style={{ fontSize: '19px', fontWeight: '900', color: 'white', marginBottom: '6px' }}>🎁 오직 앱에서만 만나는<br />이번 달 특별혜택 클릭!</div>
+          <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.9)' }}>혜택 자세히 보기 →</div>
+        </a>
+      </section>
 
       {/* 권리금 계산기 배너 */}
-      <section style={{ padding: '0 20px 20px' }}>
+      
+          <section style={{ padding: '0 20px 20px' }}>
         <a href="https://oneacademy0522.github.io/oneacademy/" target="_blank" rel="noopener noreferrer" style={{
           display: 'block', textDecoration: 'none',
           background: 'linear-gradient(135deg, #e8502a 0%, #ff7043 100%)',
