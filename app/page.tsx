@@ -35,11 +35,11 @@ export default function Home() {
         background: `linear-gradient(135deg, ${PRIMARY_DARK} 0%, ${PRIMARY} 100%)`,
         color: 'white', padding: '40px 20px', textAlign: 'center',
       }}>
-        <div style={{ fontSize: '12px', color: '#b8d4f0', marginBottom: '8px', letterSpacing: '2px' }}>ACADEMY TRADING</div>
+        <div style={{ fontSize: '12px', color: '#b8d4f0', marginBottom: '8px', letterSpacing: '2px' }}>ONE ACADEMY</div>
         <h1 style={{ fontSize: '26px', fontWeight: '900', lineHeight: '1.3', margin: '0 0 12px' }}>
           좋은 학원,<br />제대로 찾아드립니다
         </h1>
-        <p style={{ fontSize: '14px', color: '#d0e4f7', marginBottom: '24px' }}>전국 매물 · 전문 상담</p>
+        <p style={{ fontSize: '14px', color: '#d0e4f7', marginBottom: '24px' }}>매도 수수료 무료 · 전문 상담</p>
         <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
           <Link href={`/detail?url=${encodeURIComponent('https://oneacademy.co.kr/bbs/board.php?bo_table=table35')}`} style={{
             background: 'white', color: PRIMARY, padding: '12px 24px',
