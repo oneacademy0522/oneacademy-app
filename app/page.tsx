@@ -4,7 +4,7 @@ export default function Home() {
   const listings = [
     { id: 2695, region: '인천 서구', type: '피아노-관인', deposit: '2,500만원', rent: '200만원', premium: '1,500만원', students: 70, area: 47, badge: '급매물' },
     { id: 2698, region: '경기 시흥시', type: '피아노-관인', deposit: '3,000만원', rent: '120만원', premium: '6,500만원', students: 33, area: 24, badge: '추천' },
-    { id: 2681, region: '경기 동탄', type: '피아노-관인', deposit: '4,000만원', rent: '260만원', premium: '협의', students: 26, area: 30, badge: '급매물' },
+    { id: 2650, region: '경기 동탄', type: '피아노-관인', deposit: '4,000만원', rent: '260만원', premium: '협의', students: 26, area: 30, badge: '급매물' },
   ];
 
   const PRIMARY = '#1a237e';
