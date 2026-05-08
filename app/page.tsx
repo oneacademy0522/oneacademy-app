@@ -181,7 +181,7 @@ export default function Home() {
         <h2 style={{ fontSize: '16px', fontWeight: '800', color: '#1a2e4a', marginBottom: '14px' }}>📍 지역별 담당자</h2>
         <div style={{ background: 'white', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(30,95,168,0.08)', border: '1px solid #dde8f5' }}>
           {[
-            { region: '서울 / 김포 일산 파주 / 수원 성남 안양', tel: '010-8966-7792' },
+            { region: '서울 / 경기남부', tel: '010-8966-7792' },
             { region: '부산 / 창원', tel: '010-3327-1206' },
             { region: '대구 / 구미', tel: '010-3032-3467' },
             { region: '인천', tel: '010-7726-5201' },
@@ -189,6 +189,7 @@ export default function Home() {
             { region: '부천 / 광명', tel: '010-2254-6081' },
             { region: '용인', tel: '010-8301-8993' },
             { region: '광주', tel: '010-4641-6166' },
+            { region: '김해', tel: '010-4555-1911' },
           ].map((item, i, arr) => (
             <a key={i} href={`tel:${item.tel}`} style={{
               display: 'flex', justifyContent: 'space-between', alignItems: 'center',
