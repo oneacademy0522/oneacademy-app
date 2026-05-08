@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "원아카데미",
-  description: "학원 매매 전문 플랫폼 - 반값 수수료",
+  description: "학원 매매 전문 플랫폼 - 매도수수료 무료",
   manifest: "/manifest.json",
   icons: {
     apple: "/icon-512.png",
