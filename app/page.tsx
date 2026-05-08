@@ -215,7 +215,7 @@ export default function Home() {
           flex: 1, background: PRIMARY_DARK, color: 'white', padding: '14px',
           borderRadius: '10px', textAlign: 'center', textDecoration: 'none',
           fontWeight: '700', fontSize: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center',
-        }}>📞 전화상담 연결</a>
+        }}>📞 전화상담 </a>
         <a href="https://open.kakao.com/o/s6fASXti" target="_blank" rel="noopener noreferrer" style={{
           flex: 1, background: '#FEE500', color: '#3A1D1D', padding: '14px',
           borderRadius: '10px', textAlign: 'center', textDecoration: 'none',
