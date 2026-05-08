@@ -154,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* 권리금 계산기 배너 */}
-      
+
           <section style={{ padding: '0 20px 20px' }}>
         <a href="https://oneacademy0522.github.io/oneacademy/" target="_blank" rel="noopener noreferrer" style={{
           display: 'block', textDecoration: 'none',
@@ -206,20 +206,20 @@ export default function Home() {
       <div style={{ height: '80px' }} />
 
       {/* 하단 고정 버튼 */}
-      <div style={{
+ <div style={{
         position: 'fixed', bottom: 0, left: 0, right: 0,
         background: 'white', borderTop: '1px solid #dde8f5',
-        padding: '12px 20px', display: 'flex', gap: '10px',
+        padding: '12px 20px', display: 'flex', gap: '10px', alignItems: 'stretch',
       }}>
         <a href="tel:010-8966-7792" style={{
           flex: 1, background: PRIMARY_DARK, color: 'white', padding: '14px',
           borderRadius: '10px', textAlign: 'center', textDecoration: 'none',
-          fontWeight: '700', fontSize: '15px',
-        }}>📞 전화상담 010-8966-7792</a>
+          fontWeight: '700', fontSize: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>📞 전화상담 연결</a>
         <a href="https://open.kakao.com/o/s6fASXti" target="_blank" rel="noopener noreferrer" style={{
           flex: 1, background: '#FEE500', color: '#3A1D1D', padding: '14px',
           borderRadius: '10px', textAlign: 'center', textDecoration: 'none',
-          fontWeight: '700', fontSize: '15px',
+          fontWeight: '700', fontSize: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center',
         }}>💬 카카오 상담</a>
       </div>
 
