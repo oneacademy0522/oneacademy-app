@@ -206,21 +206,25 @@ export default function Home() {
       <div style={{ height: '80px' }} />
 
       {/* 하단 고정 버튼 */}
- <div style={{
+<div style={{
         position: 'fixed', bottom: 0, left: 0, right: 0,
         background: 'white', borderTop: '1px solid #dde8f5',
-        padding: '12px 20px', display: 'flex', gap: '10px', alignItems: 'stretch',
+        padding: '8px 0', display: 'flex',
       }}>
-        <a href="tel:010-8966-7792" style={{
-          flex: 1, background: PRIMARY_DARK, color: 'white', padding: '14px',
-          borderRadius: '10px', textAlign: 'center', textDecoration: 'none',
-          fontWeight: '700', fontSize: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center',
-        }}>📞 전화상담 </a>
-        <a href="https://open.kakao.com/o/s6fASXti" target="_blank" rel="noopener noreferrer" style={{
-          flex: 1, background: '#FEE500', color: '#3A1D1D', padding: '14px',
-          borderRadius: '10px', textAlign: 'center', textDecoration: 'none',
-          fontWeight: '700', fontSize: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center',
-        }}>💬 카카오 상담</a>
+        {[
+          { emoji: '🏠', label: '매물등록', href: 'https://oneacademy.co.kr/bbs/write.php?bo_table=table35', target: '_blank' },
+          { emoji: '🔎', label: '매수문의', href: 'https://oneacademy.co.kr/bbs/write.php?bo_table=table37', target: '_blank' },
+          { emoji: '📞', label: '전화상담', href: 'tel:010-8966-7792', target: '_self' },
+          { emoji: '💬', label: '카톡상담', href: 'https://open.kakao.com/o/s6fASXti', target: '_blank' },
+        ].map((item) => (
+          <a key={item.label} href={item.href} target={item.target} rel="noopener noreferrer" style={{
+            flex: 1, textAlign: 'center', textDecoration: 'none', color: '#1a2e4a',
+            padding: '6px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px',
+          }}>
+            <span style={{ fontSize: '22px' }}>{item.emoji}</span>
+            <span style={{ fontSize: '11px', fontWeight: '700' }}>{item.label}</span>
+          </a>
+        ))}
       </div>
 
       {/* 푸터 */}
