@@ -235,8 +235,7 @@ export default function Home() {
       }}>
         <div style={{ color: 'white', fontWeight: '700', fontSize: '13px', marginBottom: '8px' }}>원아카데미 (피아노홈)</div>
         <div style={{ color: '#d0e4f7', marginBottom: '8px', lineHeight: '1.7' }}>
-          원아카데미(피아노홈)은 학원의 양도양수(권리매매)를 주업무로 하는 회사입니다.<br />
-          사이트에 기재된 학원 양도·양수(권리금)는 중개사법 3조에 따라 중개대상물에 해당되지 않습니다.<br />
+          원아카데미는 공인중개사 등록업체입니다.<br />
           사이트에 기재된 광고는 현재 성업중인 학원 원장님의 요청으로 정확한 위치 및 상세정보를 공개하지 않으며<br />
           비밀유지 약정에 따라 정보를 공개합니다.
         </div>
