@@ -77,7 +77,7 @@ export default function Home() {
         <h2 style={{ fontSize: '16px', fontWeight: '800', color: '#1a2e4a', marginBottom: '14px' }}>🔗 바로가기</h2>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
           {[
-            { emoji: '💬', name: '카카오 상담', url: 'https://open.kakao.com/o/s6fASXti', bg: '#FEE500', color: '#3A1D1D' },
+            { emoji: '💬', name: '카카오 상담', url: 'https://open.kakao.com/o/s9gSZRWi', bg: '#FEE500', color: '#3A1D1D' },
             { emoji: '📝', name: '블로그', url: 'https://blog.naver.com/swnm123', bg: '#03C75A', color: 'white' },
             { emoji: '📸', name: '인스타그램', url: 'https://www.instagram.com/oneacademy_piano/', bg: '#E1306C', color: 'white' },
             { emoji: '🥁', name: '드럼앤조이', url: 'https://blog.naver.com/wmy339002/222633531346', bg: PRIMARY, color: 'white' },
