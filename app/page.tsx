@@ -1,15 +1,9 @@
 import Link from 'next/link';
+import LatestListings from './LatestListings';
 
 export default function Home() {
-  const listings = [
-    { id: 2695, region: '인천 서구', type: '피아노-관인', deposit: '2,500만원', rent: '200만원', premium: '1,500만원', students: 41, area: 24, badge: '급매물' },
-    { id: 2698, region: '경기 시흥시', type: '피아노-관인', deposit: '3,000만원', rent: '120만원', premium: '6,500만원', students: 75, area: 26, badge: '추천' },
-    { id: 2650, region: '경기 동탄', type: '피아노-관인', deposit: '4,000만원', rent: '260만원', premium: '협의', students: 90, area: 30, badge: '급매물' },
-  ];
-
   const PRIMARY = '#1a237e';
   const PRIMARY_DARK = '#154a8a';
-  const ACCENT = '#e8502a';
   const BG = '#f4f7fb';
 
   return (
@@ -75,48 +69,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 추천 매물 */}
-      <section style={{ padding: '20px' }}>
-        <h2 style={{ fontSize: '16px', fontWeight: '800', color: '#1a2e4a', marginBottom: '14px' }}>🏆 추천 매물</h2>
-        {listings.map((item) => (
-          <Link key={item.id} href={`/detail?url=${encodeURIComponent(`https://oneacademy.co.kr/bbs/board.php?bo_table=table35&wr_id=${item.id}`)}`} style={{
-            display: 'block', background: 'white', borderRadius: '12px',
-            padding: '16px', marginBottom: '10px', textDecoration: 'none',
-            color: '#222', boxShadow: '0 2px 8px rgba(30,95,168,0.08)',
-            border: '1px solid #dde8f5',
-          }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' }}>
-              <div>
-                <div style={{ fontSize: '15px', fontWeight: '800', color: '#1a2e4a' }}>{item.region}</div>
-                <div style={{ fontSize: '12px', color: '#666', marginTop: '2px' }}>{item.type}</div>
-              </div>
-              <span style={{
-                background: item.badge === '급매물' ? ACCENT : PRIMARY,
-                color: 'white', fontSize: '11px', padding: '3px 8px',
-                borderRadius: '10px', fontWeight: '700',
-              }}>{item.badge}</span>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px' }}>
-              {[
-                { label: '보증금', value: item.deposit },
-                { label: '임대료', value: item.rent },
-                { label: '권리금', value: item.premium },
-                { label: '원생수', value: `${item.students}명 / ${item.area}평` },
-              ].map((info) => (
-                <div key={info.label} style={{ background: BG, borderRadius: '6px', padding: '8px' }}>
-                  <div style={{ fontSize: '10px', color: '#888', marginBottom: '2px' }}>{info.label}</div>
-                  <div style={{ fontSize: '13px', fontWeight: '700', color: PRIMARY_DARK }}>{info.value}</div>
-                </div>
-              ))}
-            </div>
-          </Link>
-        ))}
-        <Link href={`/detail?url=${encodeURIComponent('https://oneacademy.co.kr/bbs/board.php?bo_table=table35')}`} style={{
-          display: 'block', textAlign: 'center', background: PRIMARY,
-          color: 'white', padding: '14px', borderRadius: '10px',
-          textDecoration: 'none', fontWeight: '700', fontSize: '15px', marginTop: '4px',
-        }}>전체 매물 보기 →</Link>
-      </section>
+      {/* 최신 매물 (홈페이지 실시간 연동) */}
+      <LatestListings />
 
       {/* 바로가기 */}
       <section style={{ padding: '0 20px 20px' }}>
@@ -139,7 +93,8 @@ export default function Home() {
           ))}
         </div>
       </section>
-{/* 이벤트 배너 */}
+
+      {/* 이벤트 배너 */}
       <section style={{ padding: '0 20px 20px' }}>
         <a href="https://blog.naver.com/swnm123/224278959581" target="_blank" rel="noopener noreferrer" style={{
           display: 'block', textDecoration: 'none',
@@ -154,8 +109,7 @@ export default function Home() {
       </section>
 
       {/* 권리금 계산기 배너 */}
-
-          <section style={{ padding: '0 20px 20px' }}>
+      <section style={{ padding: '0 20px 20px' }}>
         <a href="https://oneacademy0522.github.io/oneacademy/" target="_blank" rel="noopener noreferrer" style={{
           display: 'block', textDecoration: 'none',
           background: 'linear-gradient(135deg, #e8502a 0%, #ff7043 100%)',
@@ -207,7 +161,7 @@ export default function Home() {
       <div style={{ height: '80px' }} />
 
       {/* 하단 고정 버튼 */}
-<div style={{
+      <div style={{
         position: 'fixed', bottom: 0, left: 0, right: 0,
         background: 'white', borderTop: '1px solid #dde8f5',
         padding: '8px 0', display: 'flex',
